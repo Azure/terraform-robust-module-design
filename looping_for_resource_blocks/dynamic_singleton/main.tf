@@ -1,0 +1,3 @@
+resource "terraform_" "name" {
+
+}
