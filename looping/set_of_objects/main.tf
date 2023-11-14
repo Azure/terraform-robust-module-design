@@ -16,18 +16,9 @@ locals {
   ])
 }
 
-# Here we construct a map of objects from the set of objects so that we can use for_each on the resource
-locals {
-  map_of_objects = {
-    for obj in local.set_of_objects : obj.name => {
-      attr = obj.attr
-    }
-  }
-}
-
 # This errors because the for_each expression contains map keys that are not known in advance.
 resource "terraform_data" "map_of_objects" {
-  for_each = local.map_of_objects
+  for_each = { for obj in local.set_of_objects : obj.name => obj }
   input = {
     name = each.key
     attr = each.value.attr

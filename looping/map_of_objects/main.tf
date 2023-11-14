@@ -1,10 +1,10 @@
 locals {
   map_of_objects = {
-    foo = {
+    unused1 = {
       name = "foo"
       attr = "foo2"
     }
-    bar = {
+    unused2 = {
       name = "bar"
       attr = "bar2"
     }
