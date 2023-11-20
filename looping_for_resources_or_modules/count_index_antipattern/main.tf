@@ -9,10 +9,10 @@ locals {
       name = "${random_pet.name.id}-foo"
       attr = "foo2"
     },
-    # {                                    # run apply, then comment out this object and run plan
-    #   name = "${random_pet.name.id}-bar" # ...and you'll see that other resources are destroyed and recreated
-    #   attr = "bar2"                      # ...because the name value of the object at list indices 1 & 2 changed
-    # },                                   # ...
+    {                                    # run apply, then comment out this object and run plan
+      name = "${random_pet.name.id}-bar" # ...and you'll see that other resources are destroyed and recreated
+      attr = "bar2"                      # ...because the name value of the object at list indices 1 & 2 changed
+    },                                   # ...
     {
       name = "${random_pet.name.id}-baz"
       attr = "baz2"
@@ -48,5 +48,6 @@ resource "terraform_data" "arrrgh_dont_do_this" {
     # for_each loop on the resource.
     attr2 = local.list_of_objects_data[count.index]
   }
+  # This simulates a real cloud resource, where a change of a key attribute will cause the resource to be destroyed and re-created.
   triggers_replace = local.list_of_objects[count.index].name
 }
