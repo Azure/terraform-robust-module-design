@@ -38,7 +38,7 @@ variable "nested_map" {
 #
 locals {
   flattened_map = {
-    for item in flatten( # 4. We use the flatten function to flatten the nested list into a single list.
+    for item in flatten(                                           # 4. We use the flatten function to flatten the nested list into a single list.
       [
         for parent_key, parent_value in var.nested_map : [         # 1. We create a list using a for expression over the parent map variable. Each list item is another list, which we will flatten later.
           for child_key, child_value in parent_value.child_map : { # 2. We create a nested list using a for expression over the child map variable.
