@@ -48,7 +48,7 @@ locals {
           }
         ]
       ]
-    ) : "${item.parent_key}/${item.child_key}" => item.child_value # 5. We use the other half of the for expression to construct the resultant map.
+    ) : "${item.parent_key}/${item.child_key}" => item.child_value # 5. We use the other half of the for expression on line 41 to construct the resultant map.
   }                                                                #    The key is constructed using the parent and child keys and the value is the child value.
 }
 
