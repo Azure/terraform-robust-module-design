@@ -1,3 +1,4 @@
+# Using an arbitrary map key is the most robust way of avoiding errors with for_each expressions.
 locals {
   map_of_objects = {
     unused1 = {

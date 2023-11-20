@@ -1,3 +1,3 @@
-resource "terraform_" "name" {
+resource "terraform_data" "name" {
 
 }
