@@ -9,10 +9,10 @@ locals {
       name = "${random_pet.name.id}-foo"
       attr = "foo2"
     },
-    # {                                    # run apply, then comment out this object and run plan
-    #   name = "${random_pet.name.id}-bar" # ...and you'll see that other resources are destroyed and recreated
-    #   attr = "bar2"                      # ...because the name value of the object at list indices 1 & 2 changed
-    # },                                   # ...
+    {                                    # run apply, then comment out this object and run plan
+      name = "${random_pet.name.id}-bar" # ...and you'll see that other resources are destroyed and recreated
+      attr = "bar2"                      # ...because the name value of the object at list indices 1 & 2 changed
+    },                                   # ...
     {
       name = "${random_pet.name.id}-baz"
       attr = "baz2"
