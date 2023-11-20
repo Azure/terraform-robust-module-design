@@ -7,8 +7,9 @@ The patterns are sometimes not the most efficient or beautiful way of doing thin
 ## Content
 
 - [Conditional resource or module instance](./conditional_resource_or_module_instance/)
-- [Looping for resources or modules](./looping_for_resources_or_modules/)
 - [Looping for resource blocks](./looping_for_resource_blocks/)
+- [Looping for resources or modules](./looping_for_resources_or_modules/)
+- [Nested maps](./nested_maps/)
 
 ## About the authors
 
