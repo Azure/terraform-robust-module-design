@@ -37,8 +37,8 @@ locals {
       address_prefix = cidrsubnet(local.address_prefix, 8, 0)
     },
     {
-      name           = "subnet2"
-      address_prefix = cidrsubnet(local.address_prefix, 8, 1)
+      name           = "subnet3"
+      address_prefix = cidrsubnet(local.address_prefix, 8, 2)
     },
   ])
 }
