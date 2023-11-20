@@ -1,5 +1,8 @@
 # Set of objects antipattern
 
+- [back to parent](../)
+- [back home](../../)
+
 Do not use a set of objects to create multiple resources or modules which are almost identical.
 Use a map with an arbitrary key instead.
 

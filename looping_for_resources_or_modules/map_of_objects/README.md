@@ -1,5 +1,8 @@
 # Map of objects
 
+- [back to parent](../)
+- [back home](../../)
+
 Using a map of objects, with a arbitrary key is the most robust way of looping for resources or modules.
 
 Terraform also thinks this is the case, but hides the guidance in an error message for some reason:

@@ -1,5 +1,7 @@
 # Looping for resource blocks
 
+- [back home](../../)
+
 Some Terraform resource schemas define one or more blocks to define the target resource.
 A block is a nested configuration structure that is defined within a resource block.
 It is identified by the label for the block followed by `{}`.
@@ -14,3 +16,8 @@ resource "my_resource" "example" {
   }
 }
 ```
+
+## Patterns
+
+- [Dynamic `n` instances](./dynamic_n_instances/)
+- [Dynamic zero or one instance](./dynamic_singleton/)

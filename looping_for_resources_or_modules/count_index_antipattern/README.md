@@ -1,5 +1,8 @@
 # Count index antipattern
 
+- [back to parent](../)
+- [back home](../../)
+
 Do not use count to create multiple resources or modules which are almost identical.
 Use for_each instead.
 

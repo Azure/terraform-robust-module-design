@@ -1,6 +1,6 @@
 # Conditional resource or module instance
 
-[home](../)
+- [back home](../)
 
 This pattern shows how to create **either zero or one** resource or module instance, based on a variable.
 

@@ -1,5 +1,8 @@
 # Conditional resource creation using count
 
+- [back to parent](../)
+- [back home](../../)
+
 This is the preferred way to create resources conditionally.
 You can use the `one()` function to retrieve the zero index value for outputs, etc.
 
