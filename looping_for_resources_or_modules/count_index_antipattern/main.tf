@@ -48,5 +48,6 @@ resource "terraform_data" "arrrgh_dont_do_this" {
     # for_each loop on the resource.
     attr2 = local.list_of_objects_data[count.index]
   }
+  # This simulates a real cloud resource, where a change of a key attribute will cause the resource to be destroyed and re-created.
   triggers_replace = local.list_of_objects[count.index].name
 }
