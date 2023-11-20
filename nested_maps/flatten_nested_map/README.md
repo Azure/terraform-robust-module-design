@@ -1,24 +1,6 @@
-# Nested maps
+# Flatten nested map
 
-- [back home](../../)
 - [back to parent](../)
+- [back home](../../)
 
-In complex modules it is a common pattern to have a map of objects, some of the values of the objects themselves are maps.
-
-## Example Input
-
-```hcl
-variable "my_input" {
-  type = map(object({
-    name          = string
-    my_nested_map = map(object({
-      name = string
-    }))
-  }))
-  default = {}
-}
-```
-
-## Patterns
-
-- [Flatted nested map](./flatted_nested_map/)
+In this pattern, we use a local to flatten a nested map into a flattened map.

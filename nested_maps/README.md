@@ -22,4 +22,4 @@ variable "my_input" {
 
 ## Patterns
 
-- [Flatted nested map](./flatted_nested_map/)
+- [Flatten nested map](./flatten_nested_map/)
