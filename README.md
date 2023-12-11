@@ -10,6 +10,7 @@ The patterns are sometimes not the most efficient or beautiful way of doing thin
 - [Looping for resource blocks](./looping_for_resource_blocks/)
 - [Looping for resources or modules](./looping_for_resources_or_modules/)
 - [Nested maps](./nested_maps/)
+- [Passing references](./passing_references)
 
 ## About the authors
 
