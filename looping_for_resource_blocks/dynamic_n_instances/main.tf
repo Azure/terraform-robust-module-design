@@ -33,11 +33,15 @@ locals {
   address_prefix = "192.168.0.0/16"
   subnets = toset([
     {
-      name           = "subnet1"
+      name           = "subnet0"
       address_prefix = cidrsubnet(local.address_prefix, 8, 0)
     },
     {
-      name           = "subnet3"
+      name           = "subnet1"
+      address_prefix = cidrsubnet(local.address_prefix, 8, 1)
+    },
+    {
+      name           = "subnet2"
       address_prefix = cidrsubnet(local.address_prefix, 8, 2)
     },
   ])
